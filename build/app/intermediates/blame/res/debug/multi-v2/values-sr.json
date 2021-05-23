@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\jkjoh\\AndroidStudioFlutter\\Clima-Flutter\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sr\\values-sr.xml",
+            "outputFile": "C:\\Users\\jkjoh\\AndroidStudioFlutter\\CityWeather-Flutter\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sr\\values-sr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\jkjoh\\.gradle\\caches\\transforms-2\\files-2.1\\e91594602c73eba9f0c6fb1745d43dba\\core-1.1.0\\res\\values-sr\\values-sr.xml",

@@ -1,4 +1,3 @@
-import 'package:clima/services/networking.dart';
 import 'package:flutter/material.dart';
 import 'package:clima/utilities/constants.dart';
 import 'package:clima/services/weather.dart';
@@ -87,7 +86,7 @@ class _LocationScreenState extends State<LocationScreen> {
       day5 = DateFormat.E().format(DateTime.fromMillisecondsSinceEpoch(
           (weatherData['list'][30]['dt']) * 1000));
 
-      String weatherDesc = weatherData['list'][0]['weather'][0]['description'];
+      // String weatherDesc = weatherData['list'][0]['weather'][0]['description'];
 
       //WindSpeeds
       wind1 = weatherData['list'][0]['wind']['speed'];

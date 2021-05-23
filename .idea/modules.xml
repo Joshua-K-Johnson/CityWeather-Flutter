@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Clima-Flutter.iml" filepath="$PROJECT_DIR$/.idea/Clima-Flutter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CityWeather-Flutter.iml" filepath="$PROJECT_DIR$/.idea/CityWeather-Flutter.iml" />
     </modules>
   </component>
 </project>
