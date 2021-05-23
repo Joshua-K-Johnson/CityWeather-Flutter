@@ -1,4 +1,4 @@
-#Fri May 21 22:44:08 GMT-04:00 2021
+#Sat May 22 20:07:18 GMT-04:00 2021
 base.0=C\:\\Users\\jkjoh\\AndroidStudioFlutter\\Clima-Flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

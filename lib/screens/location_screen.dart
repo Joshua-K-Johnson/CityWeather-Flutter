@@ -169,7 +169,7 @@ class _LocationScreenState extends State<LocationScreen> {
                             ),
                             Text(
                               today,
-                              style: kLabelTextStyle.copyWith(fontSize: 25),
+                              style: kLabelTextStyle.copyWith(fontSize: 20),
                             ),
                           ],
                         ),
