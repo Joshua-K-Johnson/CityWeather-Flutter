@@ -17,7 +17,7 @@ class _LocationScreenState extends State<LocationScreen> {
   //Values taken from OpenWeatherMaps
   int temp1, temp2, temp3, temp4, temp5;
   String city, day1, day2, day3, day4, day5, today, time;
-  double wind1, wind2, wind3, wind4, wind5;
+  String wind1, wind2, wind3, wind4, wind5;
 
   WeatherModel weatherModel = WeatherModel();
 
@@ -43,7 +43,7 @@ class _LocationScreenState extends State<LocationScreen> {
         time = "We don't";
         today = "Know where that is";
         weatherIcon1 = "😕";
-        wind1 = 0.0;
+        wind1 = "0.0";
         return;
       }
       var temperature = weatherData['list'][0]['main']['temp'];
@@ -89,11 +89,11 @@ class _LocationScreenState extends State<LocationScreen> {
       // String weatherDesc = weatherData['list'][0]['weather'][0]['description'];
 
       //WindSpeeds
-      wind1 = weatherData['list'][0]['wind']['speed'];
-      wind2 = weatherData['list'][1]['wind']['speed'];
-      wind3 = weatherData['list'][2]['wind']['speed'];
-      wind4 = weatherData['list'][3]['wind']['speed'];
-      wind5 = weatherData['list'][4]['wind']['speed'];
+      wind1 = (weatherData['list'][0]['wind']['speed']).toStringAsFixed(1);
+      wind2 = (weatherData['list'][1]['wind']['speed']).toStringAsFixed(1);
+      wind3 = (weatherData['list'][2]['wind']['speed']).toStringAsFixed(1);
+      wind4 = (weatherData['list'][3]['wind']['speed']).toStringAsFixed(1);
+      wind5 = (weatherData['list'][4]['wind']['speed']).toStringAsFixed(1);
     });
   }
 
@@ -141,7 +141,6 @@ class _LocationScreenState extends State<LocationScreen> {
                             children: [
                               Text(
                                 '$tempMessage',
-                                textAlign: TextAlign.center,
                                 style: kLabelTextStyle.copyWith(fontSize: 20),
                               ),
                               Text(
@@ -149,7 +148,7 @@ class _LocationScreenState extends State<LocationScreen> {
                                 style: kLabelTextStyle.copyWith(fontSize: 25),
                               ),
                               Text(
-                                '⏰ $time', //can be more fine tuned
+                                '⏰$time', //can be more fine tuned
                                 style: kLabelTextStyle.copyWith(fontSize: 30),
                               ),
                             ],
@@ -197,7 +196,7 @@ class _LocationScreenState extends State<LocationScreen> {
                           children: [
                             Text(
                               day1,
-                              style: kLabelTextStyle.copyWith(fontSize: 30),
+                              style: kLabelTextStyle.copyWith(fontSize: 27),
                             ),
                             Text(
                               '🌡$temp1°C',
@@ -220,7 +219,7 @@ class _LocationScreenState extends State<LocationScreen> {
                           children: [
                             Text(
                               day2,
-                              style: kLabelTextStyle.copyWith(fontSize: 30),
+                              style: kLabelTextStyle.copyWith(fontSize: 27),
                             ),
                             Text(
                               '🌡$temp2°C',
@@ -241,7 +240,7 @@ class _LocationScreenState extends State<LocationScreen> {
                           children: [
                             Text(
                               day3,
-                              style: kLabelTextStyle.copyWith(fontSize: 30),
+                              style: kLabelTextStyle.copyWith(fontSize: 27),
                             ),
                             Text(
                               '🌡$temp3°C',
@@ -262,7 +261,7 @@ class _LocationScreenState extends State<LocationScreen> {
                           children: [
                             Text(
                               day4,
-                              style: kLabelTextStyle.copyWith(fontSize: 30),
+                              style: kLabelTextStyle.copyWith(fontSize: 27),
                             ),
                             Text(
                               '🌡$temp4°C',
@@ -283,7 +282,7 @@ class _LocationScreenState extends State<LocationScreen> {
                           children: [
                             Text(
                               day5,
-                              style: kLabelTextStyle.copyWith(fontSize: 30),
+                              style: kLabelTextStyle.copyWith(fontSize: 27),
                             ),
                             Text(
                               '🌡$temp5°C',
